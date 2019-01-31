@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Accueil.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+
+</head>
+<body>
+        <div class="header col-md-12">
+            <div class="row">
+                <ul class="col-md-2 offset-md-10 row" id="nav">
+                    <a href="#" class="parametre"><li class="col-md-2"><i class="fa fa-home"></i></li></a>
+                    <a href="#" class="parametre"><li class="col-md-2"><i class="fa fa-list"></i></li></a>
+                    <a href="#" class="parametre"><li class="col-md-2"><i class="fa fa-cog"></i></li></a>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="content col-md-12 ">
+            <div class="row">
+
+                <div class="col-md-3 etatStock">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <h6>Etat de stock</h6>
+                            <div class="row">
+                            <table class="table" style="background-color:white">
+                                <thead class="specify">
+                                <tr>
+                                    <th>Produit</th>
+                                    <th>Stock</th>
+                                    <th>Date </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                </tbody>
+                                <tfooter>
+                                <tr><td><a href="#"><i class="fa fa-plus"></i> Voir plus</a></td></tr>
+                                </tfooter>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="col-md-6 liste-formulaire">
+                    <h6>Equivalence et transaction</h6>
+                    <div class="row">
+                        <div class="col-md-12 formulaire">
+                            <div class="row">
+                                <div class="formulaire-titre col-md-12">Transaction</div>
+                                <div class="formulaire-form col-md-12">
+                                    <label for="Produit">Produit</label>
+                                    <input type="text" name="Produit" placeholder="Anana" />
+                                    <label for="Quantite">Quantite</label>
+                                    <input type="text" name="Quantite" placeholder="5"/>
+                                    <label for="Prix">Prix Unitaire(en Ariary)</label>
+                                    <input type="text" name="Prix"  placeholder="5000"/>
+                                    <label for="Date">Date</label>
+                                    <input type="date" name="Date">
+                                    <label for="Type">Type</label>
+                                    <select name="Type">
+                                        <option value="1">Entrée</option>
+                                        <option value="2">Sortie</option>
+                                    </select>
+                                    <button class="btn-pers"><i class="fa fa-check"></i> Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 formulaire">
+                            <div class="row">
+                                <div class="formulaire-titre col-md-12">Equivalence</div>
+                                <div class="formulaire-form col-md-12">
+                                    <label for="EquivalenceProduit">Produit</label>
+                                    <input type="text" name="EquivalenceProduit">
+                                    <label for="EquivalenceQuantite">Quantite</label>
+                                    <input type="text" name="EquivalenceQuantite">
+                                    <label for="EquivalenceUnite">Unité:</label>
+                                    <select name="EquivalenceUnite">
+                                        <option value="1">Kilo</option>
+                                        <option value="2">Plaquette</option>
+                                    </select>
+                                    <button class="btn-pers"><i class="fa fa-exchange-alt"></i> Convertir</button>
+                                </div>
+                                <div class="col-md-12 formulaire-valiny"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 formulaire">
+                            <div class="row">
+                                <div class="formulaire-titre col-md-12">Historique transaction</div>
+                                <table class="table" style="background-color:white">
+                                    <thead class="specify">
+                                    <tr>
+                                        <th>Produit</th>
+                                        <th>Stock</th>
+                                        <th>Date </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 navigation liste-formulaire">
+                    <h6>Sommaire</h6>
+                    <div class="row">
+                        <div class="col-md-12 formulaire">
+                            <div class="row">
+                                <div class="formulaire-titre col-md-12">Navigation</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer col-md-12">
+            <div class="row">
+                <div class="footer-info col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 footer-icon">
+                            <i class="fa fa-search fa-5x"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <p> Thank you for visiting our websites. As you see , we are already try to upgrade our work as we can </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-info col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 footer-icon">
+                            <i class="fa fa-search fa-5x"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <p> Thank you for visiting our websites. As you see , we are already try to upgrade our work as we can </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-info col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 footer-icon">
+                            <i class="fa fa-search fa-5x"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <p> Thank you for visiting our websites. As you see , we are already try to upgrade our work as we can </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>

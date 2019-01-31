@@ -1,0 +1,46 @@
+body
+{
+    background-color: grey;
+}
+.Login
+{
+    background-color: white;
+    min-height:400px;
+    margin-height:10%;
+    box-shadow: 1px 1px 1px #000000;
+}
+.Logo-Login
+{
+    height: 50px;
+}
+.User-Login
+{
+    border-right:1px solid RGBa(0,0,0,0.4);
+    min-height: 300px;
+}
+.User-Login input,label
+{
+    display: block;
+}
+.User-Login label
+{
+    margin-top:3%;
+}
+.User-Login input[type='text'] ,input[type='password']
+{
+    height: 50px;
+}
+.btn-perso
+{
+    margin-top:5%;
+    height:50px;
+    border:none;
+    background-color: #145498;
+    color:white;
+    transition:all 0.3s;
+}
+.btn-perso:hover
+{
+    background-color:#306cbe;
+    transition:all 0.3s;
+}

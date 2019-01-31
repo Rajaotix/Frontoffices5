@@ -1,0 +1,188 @@
+body
+{
+    margin:0;
+}
+.header
+{
+    height: 50px;
+    background-color: rgba(0,6,62,0.86);
+}
+.parametre
+{
+
+    color:white;
+    font-size:20px;
+}
+#nav li
+{
+    list-style: none;
+    text-align:center;
+    margin-top:8px;
+
+}
+#nav a
+{
+    text-decoration:none;
+
+}
+.content
+{
+    min-height: 550px;
+    background-color: #edeef1;
+    padding-bottom: 100px;
+}
+.list
+{
+    margin-top:2%;
+
+}
+.list-container
+{
+    margin-top:20px;
+}
+.list-element
+{
+    height: 250px;
+
+    margin-left:30px;
+    margin-top:10px;
+    z-index: 1;
+    box-shadow: 1px 1px 1px #000000;
+    transition:all 0.3s;
+}
+.list-element img
+{
+
+    width:309.14px;
+    height:250px;
+    transition:all 0.3s;
+    position:relative;
+
+}
+.list-element:hover
+{
+    box-shadow: 10px 10px 10px #000000;
+    transition:all 0.3s;
+}
+.list-element:hover img
+{
+    margin-left:-10px;
+    transition:all 0.3s;
+    width:319.14px;
+}
+.list-titre
+{
+    position:absolute;
+    z-index:10;
+
+    color:white;
+    transition:all 0.3s;
+}
+.list-element:hover .list-titre
+{
+
+    font-size:20px;
+    font-weight: bold;
+    transition:all 0.3s;
+}
+.footer
+{
+    min-height: 150px;
+    background-color: rgba(0,6,62,0.86);
+}
+.footer-info
+{
+    height:140px;
+    margin-top:20px;
+  //  border-right: 1px solid rgba(0,6,62,0.9);
+    display:block;
+
+    color:RGBa(255,255,255,0.6);
+}
+.footer-info p
+{
+    margin-top:23px;
+    text-align:center;
+}
+.footer-icon
+{
+    text-align:center;
+    margin-top:10px;
+}
+.etatStock
+{
+
+    border-radius: 20px;
+    margin-top:10px;
+    margin-left:20px;
+
+}
+.specify
+{
+    background-color: rgba(0,6,62,0.86);
+    color:white;
+}
+.formulaire
+{
+    min-height:500px;
+    background-color: white;
+    padding-top:1px;
+    margin-bottom:20px;
+}
+.liste-formulaire h6
+{
+    margin-top:-8px;
+
+}
+.liste-formulaire
+{
+
+    margin-left:20px;
+    padding-top:20px;
+
+}
+.formulaire-titre
+{
+    background-color: rgba(0,6,62,0.86);
+    height:45px;
+    color:white;
+    font-weight: bold;
+    padding-top:10px;
+}
+.formulaire-form input,label,button
+{
+    display:block;
+}
+.formulaire-form input,select,date
+{
+    height:30px;
+}
+.formulaire-form label
+{
+    font-weight:bold;
+    color:#509abe;
+    margin-top:10px;
+}
+.formulaire-form input[type='text'],input[type='date'],select
+{
+    width:500px;
+   border:none;
+    border-bottom:1px solid #d3d7d0;
+    outline:none;
+    transition:all 0.3s;
+}
+.formulaire-form input:focus
+{
+    border-bottom:3px solid #509abe;
+    transition:all 0.3s;
+    font-weight:bold;
+    color:#509abe;
+}
+.btn-pers
+{
+    border:none;
+    width:150px;
+    height:50px;
+    margin-top:10px;
+}
+
