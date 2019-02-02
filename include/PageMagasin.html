@@ -1,4 +1,4 @@
-<div class="content col-md-12 ">
+<div class="content col-md-12 " ng-controller="PageMagasin">
     <div class="row">
 
         <div class="col-md-3 etatStock">
@@ -37,20 +37,22 @@
                     <div class="row">
                         <div class="formulaire-titre col-md-12">Transaction</div>
                         <div class="formulaire-form col-md-12">
+                            <form ng-submit="PageMagasin.mouvement()">
                             <label for="Produit">Produit</label>
-                            <input type="text" name="Produit" placeholder="Anana" />
-                            <label for="Quantite">Quantite</label>
-                            <input type="text" name="Quantite" placeholder="5"/>
-                            <label for="Prix">Prix Unitaire(en Ariary)</label>
-                            <input type="text" name="Prix"  placeholder="5000"/>
-                            <label for="Date">Date</label>
-                            <input type="date" name="Date">
-                            <label for="Type">Type</label>
-                            <select name="Type">
-                                <option value="1">Entrée</option>
-                                <option value="2">Sortie</option>
-                            </select>
-                            <button class="btn-pers"><i class="fa fa-check"></i> Valider</button>
+                                <input type="text" name="Produit" placeholder="Anana" ng-model="PageMagasin.transaction.produit"/>
+                                <label for="Quantite">Quantite</label>
+                                <input type="text" name="Quantite" placeholder="5"ng-model="PageMagasin.transaction.quantite"/>
+                                <label for="Prix">Prix Unitaire(en Ariary)</label>
+                                <input type="text" name="Prix"  placeholder="5000" ng-model="PageMagasin.transaction.prix"/>
+                                <label for="Date">Date</label>
+                                <input type="date" name="Date" ng-model="PageMagasin.transaction.date">
+                                <label for="Type">Type</label>
+                                <select name="Type" ng-model="PageMagasin.transaction.type">
+                                    <option value="1">Entrée</option>
+                                    <option value="2">Sortie</option>
+                                </select>
+                                <button class="btn-pers" ><i class="fa fa-check"></i> Valider</button>
+                            </form>
                         </div>
                     </div>
                 </div>

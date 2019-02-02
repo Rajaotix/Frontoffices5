@@ -1,24 +1,50 @@
-this.usersession={username:'',id:'',password:''};
-var app=angular.module('app',[])
-app.controller('LoginController',function($http,$window){
+
+var app=angular.module('app',["ngRoute"])
+app.config(function($routeProvider){
+    $routeProvider
+        .when("/listeMagasin",{
+
+            templateUrl:"include/ListeMagasin.html",
+            controller:"ListeMagasin"
+        })
+        .when("/Magasin/:id",{
+            templateUrl:"include/PageMagasin.html",
+
+        })
+});
+app.controller('LoginController',function($http,$window,$rootScope,$scope){
     this.user={username:'',password:''};
-    this.error='';
+
+    $scope.error="";
     this.login=function() {
         console.log(this.user.username + '|' + this.user.password);
-        $http.post("/tay", {username: this.user.username, password: this.user.username})
+        $http.post("https://calm-river-57012.herokuapp.com/rest/users/Login?email="+this.user.username+"&password="+this.user.password)
             .then(function (response) {
-                if (response.data) {
+                if (response.data.valiny="1") {
 
-                    $window.location.href = '/Magasin.html';
+                    $window.location.href = '#!/listeMagasin';
                    // sessionStorage.setItem("Tix","value");
                 } else {
-                    this.error = "non";
+                    $scope.error = "non";
                 }
             });
     }
 });
+app.controller('ListeMagasin',function($http,$window){
 
 
+});
+app.controller('PageMagasin',['$scope','$routeParams',function($scope,$routeParams){
+    var idMagasin=$routeParams.id;
+    this.transaction={produit:'',quantite:'',prix:'',date:'',type:''};
+    console.log("ato");
+    this.mouvement=function(){
+
+        console.log(this.transaction.produit);
+    }
+}]);
+
+/*
 var magasinApp=angular.module('Magasinapp',["ngRoute"])
 magasinApp.config(function($routeProvider){
    $routeProvider
@@ -41,5 +67,5 @@ magasinApp.controller('ListeMagasin',function($http,$window,$scope){
 
     }
 });
-
+*/
 
