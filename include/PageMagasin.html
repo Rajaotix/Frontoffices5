@@ -36,22 +36,22 @@
                 <div class="col-md-12 formulaire">
                     <div class="row">
                         <div class="formulaire-titre col-md-12">Transaction</div>
-                        <div class="formulaire-form col-md-12">
-                            <form ng-submit="PageMagasin.mouvement()">
+                        <div class="formulaire-form col-md-12" ng-controller="CreateMouvement as crtControl">
+                            <form ng-submit="crtControl.createMouvment()">
                             <label for="Produit">Produit</label>
-                                <input type="text" name="Produit" placeholder="Anana" ng-model="PageMagasin.transaction.produit"/>
+                                <input type="text" id="Produit" placeholder="Anana" ng-model="produit"/>
                                 <label for="Quantite">Quantite</label>
-                                <input type="text" name="Quantite" placeholder="5"ng-model="PageMagasin.transaction.quantite"/>
+                                <input type="text" id="Quantite" placeholder="5"ng-model="quantite"/>
                                 <label for="Prix">Prix Unitaire(en Ariary)</label>
-                                <input type="text" name="Prix"  placeholder="5000" ng-model="PageMagasin.transaction.prix"/>
+                                <input type="text" id="Prix"  placeholder="5000" ng-model="prix"/>
                                 <label for="Date">Date</label>
-                                <input type="date" name="Date" ng-model="PageMagasin.transaction.date">
+                                <input type="date" id="Date" ng-model="date">
                                 <label for="Type">Type</label>
-                                <select name="Type" ng-model="PageMagasin.transaction.type">
-                                    <option value="1">Entrée</option>
-                                    <option value="2">Sortie</option>
+                                <select id="Type" ng-model="type">
+                                    <option value="Miditra">Entrée</option>
+                                    <option value="Mivoka">Sortie</option>
                                 </select>
-                                <button class="btn-pers" ><i class="fa fa-check"></i> Valider</button>
+                                <button class="btn-pers"><i class="fa fa-check"></i> Valider</button>
                             </form>
                         </div>
                     </div>
