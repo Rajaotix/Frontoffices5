@@ -1,4 +1,4 @@
-<div class="content col-md-12 " ng-controller="PageMagasin">
+<div class="content col-md-12 " >
     <div class="row">
 
         <div class="col-md-3 etatStock">
@@ -45,7 +45,7 @@
                                 <label for="Prix">Prix Unitaire(en Ariary)</label>
                                 <input type="text" id="Prix"  placeholder="5000" ng-model="prix"/>
                                 <label for="Date">Date</label>
-                                <input type="date" id="Date" ng-model="date">
+                                <input type="text" id="Date" ng-model="date">
                                 <label for="Type">Type</label>
                                 <select id="Type" ng-model="type">
                                     <option value="Miditra">Entrée</option>
@@ -60,16 +60,18 @@
                     <div class="row">
                         <div class="formulaire-titre col-md-12">Equivalence</div>
                         <div class="formulaire-form col-md-12">
+                            <form ng-controller="Equivalence">
                             <label for="EquivalenceProduit">Produit</label>
-                            <input type="text" name="EquivalenceProduit">
+                            <input type="text" id="EquivalenceProduit">
                             <label for="EquivalenceQuantite">Quantite</label>
-                            <input type="text" name="EquivalenceQuantite">
+                            <input type="text" id="EquivalenceQuantite">
                             <label for="EquivalenceUnite">Unité:</label>
-                            <select name="EquivalenceUnite">
+                            <select id="EquivalenceUnite">
                                 <option value="1">Kilo</option>
                                 <option value="2">Plaquette</option>
                             </select>
                             <button class="btn-pers"><i class="fa fa-exchange-alt"></i> Convertir</button>
+                            </form>
                         </div>
                         <div class="col-md-12 formulaire-valiny"></div>
                     </div>
@@ -77,7 +79,7 @@
                 <div class="col-md-12 formulaire">
                     <div class="row">
                         <div class="formulaire-titre col-md-12">Historique transaction</div>
-                        <table class="table" style="background-color:white">
+                        <table class="table" style="background-color:white" ng-controller="Historique">
                             <thead class="specify">
                             <tr>
                                 <th>Produit</th>

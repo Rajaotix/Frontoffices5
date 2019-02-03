@@ -10,7 +10,7 @@ app.config(function($routeProvider){
 
         })
         .when("/Magasin/Page/:id",{
-            templateUrl:"include/PageMagasin.html"
+            templateUrl:"include/PageMagasin.html",
 
         })
 });
@@ -65,6 +65,14 @@ app.controller('CreateMouvement',function($http,$window,$scope,$routeParams){
                 }
             });
     }
+});
+app.controller('Equivalence',function($http,$window,$scope,$routeParams){
+    this.getEquivalence=function(){
+
+    }
+});
+app.controller('Historique',function($http,$window,$scope,$routeParams){
+
 });
 app.controller('PageMagasin',['$scope','$routeParams',function($scope,$routeParams){
     var idMagasin=$routeParams.id;
